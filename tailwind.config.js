@@ -32,6 +32,9 @@ export default {
       minHeight: {
         calculator: 'calc(100vh - (3rem + 2.5rem + 64px))',
       },
+      dropShadow: {
+        calculator: '0 32px 32px hsla(var(--shadow) / 0.075)',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

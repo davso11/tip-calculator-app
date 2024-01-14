@@ -4,15 +4,16 @@
 
 :root {
   --primary: 172 67% 45%;
-  --primary-dark: 183, 100%, 15%;
+  --primary-dark: 183 100% 15%;
 
-  --neutral-lighter: 189, 41%, 97%;
-  --neutral-light: 185, 41%, 84%;
-  --neutral: 184, 14%, 56%;
-  --neutral-dark: 186, 14%, 43%;
+  --neutral-lighter: 189 41% 97%;
+  --neutral-light: 185 41% 84%;
+  --neutral: 184 14% 56%;
+  --neutral-dark: 186 14% 43%;
 
   --background: var(--neutral-light);
   --input: var(--neutral-lighter);
+  --shadow: var(--primary-dark);
 }
 
 @layer base {
@@ -52,7 +53,7 @@
   }
 
   .calculator {
-    @apply min-h-calculator rounded-t-3xl bg-white p-10 md:min-h-[auto] md:rounded-b-3xl md:p-12;
+    @apply min-h-calculator md:drop-shadow-calculator rounded-t-3xl bg-white p-10 md:min-h-[auto] md:rounded-b-3xl md:p-12;
   }
 }
 
