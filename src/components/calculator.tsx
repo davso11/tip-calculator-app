@@ -214,6 +214,7 @@ export function Calculator() {
 
         <Button
           className="mt-auto w-full bg-primary text-primary-dark"
+          disabled={!tipAmount || !total}
           onClick={reset}
         >
           RESET
