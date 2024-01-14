@@ -49,7 +49,7 @@
   }
 
   .input {
-    @apply rtl rounded border-none bg-input px-5 py-4 text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
+    @apply rounded border-none bg-input px-5 py-4 text-end text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
   }
 
   .calculator {
