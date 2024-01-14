@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 172 67% 45%;
+  --primary-dark: 183, 100%, 15%;
+
+  --neutral-lighter: 189, 41%, 97%;
+  --neutral-light: 185, 41%, 84%;
+  --neutral: 184, 14%, 56%;
+  --neutral-dark: 186, 14%, 43%;
+
+  --background: var(--neutral-light);
+  --input: var(--neutral-lighter);
+}
+
+@layer base {
+  * {
+    @apply min-w-0;
+  }
+
+  html {
+    @apply bg-background font-body;
+  }
+
+  body {
+    @apply font-bold text-primary-dark antialiased;
+  }
+}
+
+@layer base {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .title {
+    @apply text-2xl font-bold tracking-[0.85rem];
+  }
+
+  .input {
+    @apply rtl rounded border-none bg-input px-5 py-4 text-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
+  }
+
+  .calculator {
+    @apply min-h-calculator rounded-t-3xl bg-white p-10 md:min-h-[auto] md:rounded-b-3xl md:p-12;
+  }
+}
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+}
